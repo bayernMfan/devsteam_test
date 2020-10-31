@@ -21,7 +21,7 @@ class PhotoBloc extends Bloc<PhotoEvent, PhotoState> {
       yield PhotoIsLoading();
 
       try {
-        List<PhotoModel> photos = await photoRepo.getPhotosList();
+        List<PhotoModel> photos = await photoRepo.getPhotosList(event._token);
         yield PhotoLoaded(photos);
       } catch (exception) {
         yield PhotoNotLoaded(exception.toString());
