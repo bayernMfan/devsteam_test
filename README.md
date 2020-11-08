@@ -1,6 +1,6 @@
 # devsteam_test
 
-A new Flutter project.
+Тестовое задание на должность Junior Flutter developer devsteam.mobi
 
 ## Getting Started
 
